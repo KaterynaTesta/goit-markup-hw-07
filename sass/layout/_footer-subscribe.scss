@@ -1,0 +1,27 @@
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  margin-left: auto;
+}
+
+.subscribe-list {
+  display: flex;
+  align-items: center;
+}
+.subscribe-title {
+  font-family: var(--main-font);
+  font-weight: var(--main-font-weight);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.subscribe-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list-link {
+  background: rgba(255, 255, 255, 0.1);
+}

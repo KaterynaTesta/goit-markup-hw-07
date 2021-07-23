@@ -23,11 +23,8 @@
   align-items: center;
   justify-content: center;
   font-family: var(--main-font);
-  font-weight: var(--main-font-weight);
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 700, 1.14);
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   background: rgba(47, 48, 58, 0.8);
   color: #ffffff;

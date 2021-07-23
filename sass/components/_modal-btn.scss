@@ -7,10 +7,7 @@
   border-radius: 4px;
   margin-top: 30px;
   font-family: var(--main-font);
-  font-weight: var(--main-font-weight);
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
+   @include font(16px, 400, 1.9, 0.06em);
   text-align: center;
   color: #ffffff;
   background-color: var(--accent-color);

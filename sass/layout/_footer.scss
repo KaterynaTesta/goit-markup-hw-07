@@ -12,10 +12,7 @@
 }
 .logo-footer {
   font-family: var(--secondary-font);
-  font-weight: var(--main-font-weight);
-  font-size: 26px;
-  letter-spacing: 0.03em;
-  line-height: 1.19;
+  @include font(26px, 700, 1.19);
   color: #ffffff;
   text-align: left;
 }
@@ -25,20 +22,14 @@
 }
 
 .contact-info-address {
-  font-weight: var(--secondary-font-weight);
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  line-height: 1.71;
+  @include font(14px, 400, 1.71);
   text-align: left;
   color: #ffffff;
 }
 
 .contact-info-mail,
 .contact-info-phone {
-  font-weight: var(--secondary-font-weight);
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  line-height: 1.71;
+  @include font(14px, 400, 1.71);
   text-align: left;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);

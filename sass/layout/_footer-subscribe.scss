@@ -10,10 +10,7 @@
 }
 .subscribe-title {
   font-family: var(--main-font);
-  font-weight: var(--main-font-weight);
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(14px, 700, 1.14);
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;

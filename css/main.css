@@ -76,8 +76,8 @@ img {
   border-radius: 4px;
   margin-top: 30px;
   font-family: var(--main-font);
-  font-weight: var(--main-font-weight);
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.9;
   letter-spacing: 0.06em;
   text-align: center;
@@ -115,26 +115,26 @@ img {
 .subtitle {
   margin-bottom: 50px;
   font-family: var(--main-font);
-  font-weight: var(--main-font-weight);
   font-size: 36px;
-  letter-spacing: 0.03em;
+  font-weight: 400;
   line-height: 1.6;
+  letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-color);
 }
 
-.title {
+.hero__title {
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
   font-family: var(--main-font);
-  font-weight: 900;
   font-size: 44px;
+  font-weight: 900;
   line-height: 1.36;
+  letter-spacing: 0.06em;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 0.06em;
 }
 
 .backdrop {
@@ -159,7 +159,6 @@ img {
 .modal {
   position: absolute;
   width: 528px;
-  /* height: 581px; */
   left: 50%;
   top: 50%;
   background: #ffffff;
@@ -195,19 +194,19 @@ img {
 
 .modal-form-head {
   font-family: var(--main-font);
-  font-weight: var(--main-font-weight);
   font-size: 20px;
+  font-weight: 400;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--title-color);
   margin-bottom: 12px;
 }
 
 .modal-form-field {
   font-family: var(--main-font);
-  font-weight: var(--secondary-font-weight);
   font-size: 12px;
+  font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--text-color);
@@ -265,8 +264,8 @@ img {
   display: flex;
   align-items: center;
   font-family: var(--main-font);
-  font-weight: var(--secondary-font-weight);
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
@@ -316,8 +315,8 @@ img {
   border-radius: 4px;
   border: none;
   font-family: var(--main-font);
-  font-weight: var(--main-font-weight);
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: #ffffff;
@@ -352,7 +351,7 @@ img {
   position: relative;
 }
 
-.nav-link.current::after {
+.nav__link.current::after {
   position: absolute;
   content: "";
   display: block;
@@ -376,40 +375,40 @@ img {
 }
 
 .logo,
-.logo-item {
+.logo__item {
   font-family: var(--secondary-font);
-  font-weight: var(--main-font-weight);
   font-size: 26px;
-  letter-spacing: 0.03em;
+  font-weight: 700;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   color: #000000;
   text-align: left;
 }
 
-.logo-item {
+.logo__item {
   color: var(--accent-color);
 }
 
 /* Navigation */
-.nav-item:not(:last-child) {
+.nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-link {
+.nav__link {
   font-family: var(--main-font);
-  font-weight: 500;
   font-size: 14px;
-  letter-spacing: 0.02em;
+  font-weight: 500;
   line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--title-color);
   text-align: left;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-link:hover, .nav-link:focus {
+.nav__link:hover, .nav__link:focus {
   color: var(--accent-color);
 }
 
-.contact-list {
+.contact {
   display: flex;
   margin-left: auto;
 }
@@ -425,18 +424,18 @@ img {
   fill: currentColor;
 }
 
-.contact-link {
+.contact__link {
   display: flex;
   align-items: center;
   font-family: var(--main-font);
   color: var(--text-color);
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
   letter-spacing: 0.02em;
-  line-height: 1.14;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-link:hover, .contact-link:focus {
+.contact__link:hover, .contact__link:focus {
   color: var(--accent-color);
 }
 
@@ -469,24 +468,24 @@ img {
   border-radius: 4px;
 }
 
-.about-item {
+.advantages__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -10px;
 }
 
-.advantages {
+.advantages__item {
   flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
   margin-top: 10px;
 }
 
-.about-us {
+.advantages_subtitle {
   margin-bottom: 10px;
   font-family: var(--main-font);
-  font-weight: var(--main-font-weight);
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -494,12 +493,12 @@ img {
   color: var(--title-color);
 }
 
-.about-us-desc {
+.advantages__desc {
   font-family: var(--main-font);
-  font-weight: var(--secondary-font-weight);
   font-size: 14px;
-  letter-spacing: 0.03em;
+  font-weight: 400;
   line-height: 1.71;
+  letter-spacing: 0.03em;
   text-align: left;
   color: var(--text-color);
 }
@@ -532,11 +531,11 @@ img {
   align-items: center;
   justify-content: center;
   font-family: var(--main-font);
-  font-weight: var(--main-font-weight);
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   background: rgba(47, 48, 58, 0.8);
   color: #ffffff;
@@ -566,20 +565,20 @@ img {
 .subtitle-photo-name {
   margin-bottom: 10px;
   font-family: var(--main-font);
-  font-weight: 500;
   font-size: 16px;
-  letter-spacing: 0.03em;
+  font-weight: 500;
   line-height: 1.18;
+  letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-color);
 }
 
 .position {
   font-family: var(--main-font);
-  font-weight: var(--secondary-font-weight);
   font-size: 16px;
-  letter-spacing: 0.03em;
+  font-weight: 400;
   line-height: 1.18;
+  letter-spacing: 0.03em;
   text-align: center;
   color: var(--text-color);
   margin-bottom: 16px;
@@ -639,10 +638,10 @@ img {
 
 .logo-footer {
   font-family: var(--secondary-font);
-  font-weight: var(--main-font-weight);
   font-size: 26px;
-  letter-spacing: 0.03em;
+  font-weight: 700;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   color: #ffffff;
   text-align: left;
 }
@@ -652,20 +651,20 @@ img {
 }
 
 .contact-info-address {
-  font-weight: var(--secondary-font-weight);
   font-size: 14px;
-  letter-spacing: 0.03em;
+  font-weight: 400;
   line-height: 1.71;
+  letter-spacing: 0.03em;
   text-align: left;
   color: #ffffff;
 }
 
 .contact-info-mail,
 .contact-info-phone {
-  font-weight: var(--secondary-font-weight);
   font-size: 14px;
-  letter-spacing: 0.03em;
+  font-weight: 400;
   line-height: 1.71;
+  letter-spacing: 0.03em;
   text-align: left;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -705,8 +704,8 @@ img {
 
 .subscribe-title {
   font-family: var(--main-font);
-  font-weight: var(--main-font-weight);
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -735,9 +734,9 @@ img {
 
 .follow-head {
   font-family: var(--main-font);
-  font-weight: var(--main-font-weight);
   font-size: 14px;
-  line-height: 1.14;
+  font-weight: 700;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
@@ -771,11 +770,11 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-family: var(--main-font);
-  font-weight: var(--main-font-weight);
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.87;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   color: #ffffff;
   border: none;
   transform: background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -800,11 +799,11 @@ img {
 
 .menu-btn {
   font-family: var(--main-font);
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--title-color);
   background-color: #f5f4fa;
   border: none;
@@ -856,8 +855,8 @@ img {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-family: var(--main-font);
-  font-weight: var(--secondary-font-weight);
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: #ffffff;
@@ -884,19 +883,19 @@ img {
 
 .project {
   background: #ffffff;
-  font-weight: 700;
   font-size: 18px;
-  letter-spacing: 0.06em;
+  font-weight: 700;
   line-height: 2;
+  letter-spacing: 0.06em;
   text-align: left;
   color: var(--title-color);
 }
 
 .project-type {
-  font-weight: var(--secondary-font-weight);
   font-size: 16px;
-  letter-spacing: 0.03em;
+  font-weight: 400;
   line-height: 1.87;
+  letter-spacing: 0.03em;
   text-align: left;
   color: var(--text-color);
 }/*# sourceMappingURL=main.css.map */

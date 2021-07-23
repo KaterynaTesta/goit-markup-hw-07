@@ -1,13 +1,10 @@
-.title {
+.hero__title {
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
   font-family: var(--main-font);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  @include font(44px, 900, 1.36, 0.06em);
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 0.06em;
 }
